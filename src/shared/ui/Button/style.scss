@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: $blue-gray;
+  color: $color-white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  box-shadow: 5px 10px 20px 0 rgba(53, 110, 173, 0.2);
+
+  &__label {
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $font-primary;
+  }
+  &:hover {
+    background-color: $lapis-lazuli;
+  }
+
+  &:active {
+    background-color: $color-black;
+  }
+}
