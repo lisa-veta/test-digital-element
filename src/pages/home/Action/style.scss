@@ -1,0 +1,35 @@
+.action {
+  background-color: $blue-gray;
+
+  &__wrapper {
+    margin-right: 96px;
+    padding: 91px 197px 91px 212px;
+    display: flex;
+    gap: 180px;
+    background-color: $lapis-lazuli;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 200px 0 0 ;
+  }
+  &__text {
+    color: $color-white;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    max-width: 316px;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.6;
+    max-width: 460px;
+  }
+}

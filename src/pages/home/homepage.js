@@ -1,4 +1,5 @@
-import "./homepage.scss";
+import "./styles.scss";
+import { Action } from "@pages/home/Action";
 import { Clients } from "@pages/home/Clients";
 import { Features } from "@pages/home/Features";
 import { Hero } from "@pages/home/Hero";
@@ -13,6 +14,7 @@ export function initHomepage() {
     ${Hero({})}
     ${Features()}
     ${Clients()}
+    ${Action()}
   </main>
   <footer>
   </footer>

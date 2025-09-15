@@ -17,10 +17,13 @@
     font-family: $font-primary;
   }
   &:hover {
-    background-color: $lapis-lazuli;
+    background-color: $steel-blue;
   }
 
   &:active {
-    background-color: $color-black;
+    background-color: $lapis-lazuli;
+  }
+  &--wide {
+    width: 220px;
   }
 }

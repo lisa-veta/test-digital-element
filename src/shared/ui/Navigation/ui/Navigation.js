@@ -9,7 +9,7 @@ import "../style.scss";
 export const Navigation = () => `
 <div class="navigation">
     <div class="navigation__logo">
-      ${LogoIcon()}
+      ${LogoIcon({})}
     </div>
     <div class="navigation__menu">
         ${MenuIcon()}
