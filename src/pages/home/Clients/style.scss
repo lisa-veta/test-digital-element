@@ -1,0 +1,28 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  gap: 123px;
+  padding: 96px 212px 125px;
+  background-color: $blue-gray;
+  color: $color-white;
+  border-radius: 200px 0 0 0;
+
+  &__text {
+    display: flex;
+    gap: 98px;
+    letter-spacing: 0.05em;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;
+  }
+
+  &__description {
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.6;
+  }
+}
