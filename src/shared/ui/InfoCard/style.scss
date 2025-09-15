@@ -1,0 +1,73 @@
+.infoCard {
+  padding: 236px 48px 48px 48px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  gap: 56px;
+  box-shadow: 5px 20px 50px 0 rgba(53, 110, 173, 0.2);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: $yale-blue;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 26px;
+    color: $yale-blue;
+    opacity: 0.6;
+  }
+
+  &__link {
+    display: flex;
+    align-self: flex-start;
+    gap: 24px;
+    color: $blue-gray;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__image--variant1 {
+    width: 182px;
+    height: auto;
+    transform: translateX(calc(-50% - 25px));
+  }
+
+  &__image--variant2 {
+    width: 224px;
+    height: auto;
+    bottom: 310px;
+  }
+
+  &__image--variant3 {
+    width: 156px;
+    height: auto;
+    transform: translateX(calc(-50% - 12px));
+  }
+
+}
