@@ -1,0 +1,47 @@
+.table {
+
+  border-collapse: collapse;
+  width: 100%;
+
+  &__column {
+    padding: 46px 41px;
+    text-transform: uppercase;
+    text-align: center;
+    border-right: 1px solid $color-white;
+    border-bottom: 1px solid $color-white;
+  }
+
+  &__column:last-child {
+    border-right: none;
+  }
+
+  &__row:last-child &__column {
+    border-bottom: none;
+  }
+
+  &__column_more {
+    padding: 0;
+  }
+  &__button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 46px 41px;
+    font-weight: bold;
+    text-transform: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(31, 63, 104, 0.3);
+    transition: background-color 0.3s;
+  }
+
+  &__button:hover {
+    background-color: $yale-blue;
+  }
+
+  &__button:focus {
+    background-color: $color-black;
+  }
+
+}
