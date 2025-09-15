@@ -1,1 +1,1 @@
-export { InfoCard } from "./ui/InfoCard.js"
+export { InfoCard } from "./ui/InfoCard.js";

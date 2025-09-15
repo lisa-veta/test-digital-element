@@ -13,7 +13,9 @@ import { HERO_TEXT, HERO_DESCRIPTION, HERO_BUTTON_TEXT } from "../constants.js";
  * @param {string} [props.button_text=HERO_BUTTON_TEXT] - Текст кнопки
  * @returns {string} HTML-разметка секции Hero
  */
-export const Hero = ({ title = HERO_TEXT, description = HERO_DESCRIPTION, button_text = HERO_BUTTON_TEXT, image = "/assets/heroIllustration.png" }) => `
+export const Hero = ({
+  title = HERO_TEXT, description = HERO_DESCRIPTION, button_text = HERO_BUTTON_TEXT, image = "/assets/heroIllustration.png", 
+}) => `
 <section class="hero">${Navigation({})}
     <div class="hero__wrapper">
         <div class="hero__text">

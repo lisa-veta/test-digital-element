@@ -1,6 +1,6 @@
 import "./homepage.scss";
+import { Features } from "@pages/home/Features";
 import { Hero } from "@pages/home/Hero";
-import {Features} from "@pages/home/Features";
 
 /**
  * Инициализирует главную страницу
