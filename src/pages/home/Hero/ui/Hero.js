@@ -13,18 +13,18 @@ import { HERO_TEXT, HERO_DESCRIPTION, HERO_BUTTON_TEXT } from "../constants.js";
  * @param {string} [props.button_text=HERO_BUTTON_TEXT] - Текст кнопки
  * @returns {string} HTML-разметка секции Hero
  */
-export const Hero = ({ title = HERO_TEXT, description = HERO_DESCRIPTION, button_text = HERO_BUTTON_TEXT }) => `
-<div class="hero">${Navigation({})}
+export const Hero = ({ title = HERO_TEXT, description = HERO_DESCRIPTION, button_text = HERO_BUTTON_TEXT, image = "/assets/heroIllustration.png" }) => `
+<section class="hero">${Navigation({})}
     <div class="hero__wrapper">
         <div class="hero__text">
-             <div class="hero__title">
+             <h1 class="hero__title">
                  ${title}
-            </div>
-            <div class="hero__description">
+            </h1>
+            <p class="hero__description">
                  ${description}
-            </div>
+            </p>
         </div>
         ${Button({ text: button_text })}
     </div>
-    <img class="hero__image" src="/assets/heroIllustration.png" alt="Hero Illustration" />
-</div>`;
+    <img class="hero__image" src=${image} alt="Hero Illustration" />
+</section>`;

@@ -1,6 +1,6 @@
 /**
- * Генерирует SVG-картинку
- * @returns {string} HTML-разметка SVG картинки
+ * Генерирует SVG-изображение
+ * @returns {string} HTML-разметка SVG изображения
  */
 export const MenuIcon = (iconColor = "#356EAD", width = 32, height = 32) => {
   return `<svg width=${width} height=${height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
