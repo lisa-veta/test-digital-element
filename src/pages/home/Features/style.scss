@@ -1,0 +1,30 @@
+.features {
+  margin: 180px 212px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  &__col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 158px;
+  }
+
+  &__card1 {
+    margin-left: 80px;
+  }
+
+  .features__label {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: bold;
+    color: $lapis-lazuli;
+  }
+
+  &__col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+}
