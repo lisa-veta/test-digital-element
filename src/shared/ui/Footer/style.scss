@@ -1,0 +1,98 @@
+.footer {
+  background-color: $blue-gray;
+
+  .footer__line {
+    background-color: $color-white;
+    height: 1px;
+    opacity: 0.4;
+    margin-left: -214px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    background-color: $lapis-lazuli;
+    color:  $color-white;
+    padding: 96px 200px 64px 214px;
+    margin-right: 96px;
+  }
+
+  &__wrapper-info {
+    display: flex;
+    gap: 100px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__logo {
+    display: flex;
+    gap: 15px;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+  }
+
+  &__type {
+    font-weight: 600;
+  }
+
+  &__commun {
+    display: flex;
+    gap: 16px;
+    max-width: 299px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    gap: 77px;
+  }
+
+  &__links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__links-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    color: $color-white;
+    font-size: 16px;
+    line-height: 26px;
+    transition: color 0.3s;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+  }
+  &__link:hover {
+    color: $blue-gray;
+  }
+
+  &__rights {
+    background-color: $lapis-lazuli;
+    color: $color-white;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    opacity: 0.4;
+  }
+}
