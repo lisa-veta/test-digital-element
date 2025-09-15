@@ -1,4 +1,4 @@
-.infoCard {
+.info-card {
   padding: 236px 48px 48px 48px;
   width: 380px;
   display: flex;
@@ -18,7 +18,8 @@
   &__text {
     display: flex;
     flex-direction: column;
-    gap: 16px
+    gap: 16px;
+    letter-spacing: 0.05em;
   }
 
   &__title {

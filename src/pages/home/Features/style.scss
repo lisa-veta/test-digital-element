@@ -3,6 +3,7 @@
   display: flex;
   align-content: center;
   justify-content: center;
+  gap: 100px;
 
   &__col1 {
     display: flex;
@@ -15,6 +16,7 @@
   }
 
   .features__label {
+    padding-right: 100px;
     font-size: 36px;
     line-height: 46px;
     font-weight: bold;
