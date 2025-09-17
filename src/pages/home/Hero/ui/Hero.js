@@ -1,7 +1,10 @@
-import { Button } from "@shared/ui/Button/index.js";
-import { Navigation } from "@shared/ui/Navigation/index.js";
+import { Button } from "@shared/ui/Button";
+import { Navigation } from "@shared/ui/Navigation";
 import "../style.scss";
 import { HERO_TEXT, HERO_DESCRIPTION, HERO_BUTTON_TEXT } from "../constants.js";
+import { Typography } from "@shared/ui/Typography";
+import { TYPOGRAPHY_TYPES } from "@shared/ui/Typography/constants";
+import { HERO_TEXT, HERO_DESCRIPTION, HERO_BUTTON_TEXT } from "../constants";
 
 /**
  * Компонент Hero для главной страницы.
@@ -16,15 +19,20 @@ import { HERO_TEXT, HERO_DESCRIPTION, HERO_BUTTON_TEXT } from "../constants.js";
 export const Hero = ({
   title = HERO_TEXT, description = HERO_DESCRIPTION, button_text = HERO_BUTTON_TEXT, image = "/assets/heroIllustration.png", 
 }) => `
-<section class="hero">${Navigation({})}
+<section class="hero">
+    ${Navigation({})}
     <div class="hero__wrapper">
         <div class="hero__text">
-             <h1 class="hero__title">
-                 ${title}
-            </h1>
-            <p class="hero__description">
-                 ${description}
-            </p>
+              ${Typography({
+                type: TYPOGRAPHY_TYPES.H1,
+                text: title,
+                extraClasses: [ "hero__title" ],
+              })}
+              ${Typography({
+                type: TYPOGRAPHY_TYPES.BODY,
+                text: description,
+                extraClasses: [ "hero__description" ],
+              })}
         </div>
         ${Button({ text: button_text })}
     </div>

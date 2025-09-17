@@ -1,5 +1,7 @@
 import "../style.scss";
 import { ArrowIcon } from "@shared/ui/Icons";
+import { Typography } from "@shared/ui/Typography";
+import { TYPOGRAPHY_TYPES } from "@shared/ui/Typography/constants";
 
 /**
  * Компонент карточки

@@ -23,15 +23,11 @@
   }
 
   &__title {
-    font-size: 20px;
-    line-height: 30px;
     font-weight: bold;
     color: $yale-blue;
   }
 
   &__description {
-    font-size: 16px;
-    line-height: 26px;
     color: $yale-blue;
     opacity: 0.6;
   }
@@ -41,8 +37,6 @@
     align-self: flex-start;
     gap: 24px;
     color: $blue-gray;
-    font-size: 14px;
-    line-height: 30px;
     font-weight: 600;
   }
 

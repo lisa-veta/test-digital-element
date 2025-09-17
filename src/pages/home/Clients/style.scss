@@ -14,15 +14,12 @@
   }
 
   &__title {
-    font-size: 36px;
-    line-height: 46px;
+    max-width: 223px;
     font-weight: 600;
   }
 
   &__description {
     max-width: 540px;
-    font-size: 16px;
-    line-height: 26px;
     opacity: 0.6;
   }
 }

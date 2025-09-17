@@ -1,5 +1,8 @@
 import "../style.scss";
 import { LogoIcon } from "@shared/ui/Icons/index.js";
+import { LogoIcon } from "@shared/ui/Icons";
+import { Typography } from "@shared/ui/Typography";
+import { LETTER_SPACING, TYPOGRAPHY_TYPES } from "@shared/ui/Typography/constants";
 
 /**
  * Footer страницы
@@ -18,15 +21,28 @@ export const Footer = ({ contactInfo, aboutLinks, followLinks }) => `
       <div class="footer__info">
         <div class="footer__logo">
           ${LogoIcon({ colorCircle: "#98C3E8" })}
-          <div class="footer__title">Afrianska</div>
+          ${Typography({
+            type: TYPOGRAPHY_TYPES.SUBTITLE,
+            spacing: LETTER_SPACING.SMALL,
+            text: "Afrianska",
+            extraClasses: [ "footer__title" ],
+          })}
         </div>
 
         ${contactInfo
           .map(
             (item) => `
           <div class="footer__commun">
-            <div class="footer__type">${item.type}</div>
-            <div class="footer__text">${item.text}</div>
+            ${Typography({
+              type: TYPOGRAPHY_TYPES.BODY,
+              text: item.type,
+              extraClasses: [ "footer__type" ],
+            })}
+            ${Typography({
+              type: TYPOGRAPHY_TYPES.BODY,
+              text: item.text,
+              extraClasses: [ "footer__text" ],
+            })}
           </div>
         `
           )
@@ -35,13 +51,21 @@ export const Footer = ({ contactInfo, aboutLinks, followLinks }) => `
 
       <div class="footer__info-wrapper">
         <div class="footer__links-wrapper">
-          <div class="footer__links-title">About us</div>
+           ${Typography({
+              type: TYPOGRAPHY_TYPES.SUBTITLE,
+              text: "About us",
+              extraClasses: [ "footer__links-title" ],
+            })}
           <div class="footer__links">
            ${aboutLinks
               .map(
                 (link) => `
                           <a class="footer__link" href="${link.href}">
-                            ${link.label}
+                            ${Typography({
+                              type: TYPOGRAPHY_TYPES.BODY,
+                              text: link.label,
+                              extraClasses: [ "footer__link" ],
+                            })}
                           </a>
                         `
               )
@@ -50,13 +74,21 @@ export const Footer = ({ contactInfo, aboutLinks, followLinks }) => `
         </div>
 
         <div class="footer__links-wrapper">
-          <div class="footer__links-title">Follow us</div>
+          ${Typography({
+            type: TYPOGRAPHY_TYPES.SUBTITLE,
+            text: "Follow us",
+            extraClasses: [ "footer__links-title" ],
+          })}
           <div class="footer__links">
            ${followLinks
               .map(
                 (link) => `
                           <a class="footer__link" href="${link.href}">
-                            ${link.label}
+                            ${Typography({
+                              type: TYPOGRAPHY_TYPES.BODY,
+                              text: link.label,
+                              extraClasses: [ "footer__link" ],
+                            })}
                           </a>
                         `
               )
@@ -65,8 +97,12 @@ export const Footer = ({ contactInfo, aboutLinks, followLinks }) => `
         </div>
       </div>
     </div>
-
-    <div class="footer__rights">2019 © Afrianska. All rights reserved.</div>
+    ${Typography({
+      type: TYPOGRAPHY_TYPES.BODY,
+      spacing: LETTER_SPACING.TIGHT,
+      text: "2019 © Afrianska. All rights reserved.",
+      extraClasses: [ "footer__rights" ],
+    })}
   </div>
 </div>
 `;
