@@ -1,5 +1,6 @@
 import { getGeneratedAttrs } from "@shared/lib/utils/index.js";
 import "../style.scss";
+import "../media.scss";
 import { Typography } from "@shared/ui/Typography";
 /**
  * Компонент кнопки

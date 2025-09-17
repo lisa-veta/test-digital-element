@@ -1,0 +1,53 @@
+.info-card {
+  @media (max-width: 480px), (max-width: 768px) {
+    width: 250px;
+    padding: 150px 20px 20px 20px;
+
+    &__wrapper {
+      gap: 16px;
+    }
+
+    &__text {
+      gap: 8px;
+    }
+
+    &__image {
+      bottom: 236px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__image--variant1 {
+      width: 130px;
+      bottom: 170px;
+      transform: translateX(calc(-50% - 25px));
+    }
+
+    &__image--variant2 {
+      width: 160px;
+      bottom: 175px;
+    }
+
+    &__image--variant3 {
+      width: 120px;
+      bottom: 170px;
+      transform: translateX(calc(-50% - 12px));
+    }
+  }
+  @media (min-width: 480px) and (max-width: 768px) {
+    width: 360px;
+    padding: 150px 20px 20px 20px;
+
+    &__image--variant1 {
+      bottom: 220px;
+    }
+
+    &__image--variant2 {
+      bottom: 230px;
+    }
+
+    &__image--variant3 {
+      bottom: 225px;
+    }
+  }
+}

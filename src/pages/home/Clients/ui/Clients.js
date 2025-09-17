@@ -1,4 +1,5 @@
 import "../style.scss";
+import "../media.scss";
 import { CLIENTS } from "@pages/home/Clients/constants";
 import { Table } from "@shared/ui/Table";
 import { Typography } from "@shared/ui/Typography";

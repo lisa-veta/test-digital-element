@@ -1,4 +1,5 @@
 import "../style.scss";
+import "../media.scss";
 import { ArrowIcon } from "@shared/ui/Icons";
 import { Typography } from "@shared/ui/Typography";
 import { TYPOGRAPHY_TYPES } from "@shared/ui/Typography/constants";
@@ -25,12 +26,24 @@ export const InfoCard = ({
           alt="Illustration" 
         />
       <div class="info-card__text">
-        <div class="info-card__title">${title}</div>
-        <div class="info-card__description">${description}</div>
+          ${Typography({
+            type: TYPOGRAPHY_TYPES.SUBTITLE2,
+            text: title,
+            extraClasses: [ "info-card__title" ],
+          })}
+        ${Typography({
+          type: TYPOGRAPHY_TYPES.BODY,
+          text: description,
+          extraClasses: [ "info-card__description" ],
+        })}
       </div>
       <a class="info-card__link" href="${link}">
-        <span>learn more</span>
-        ${ArrowIcon()}
+         ${Typography({
+            type: TYPOGRAPHY_TYPES.CAPTION,
+            text: "learn more",
+            extraClasses: [ "info-card__link" ],
+          })}
+          ${ArrowIcon()}
       </a>
     </div>
   </div>`;

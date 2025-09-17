@@ -1,7 +1,7 @@
 import { Button } from "@shared/ui/Button";
 import { Navigation } from "@shared/ui/Navigation";
 import "../style.scss";
-import { HERO_TEXT, HERO_DESCRIPTION, HERO_BUTTON_TEXT } from "../constants.js";
+import "../media.scss";
 import { Typography } from "@shared/ui/Typography";
 import { TYPOGRAPHY_TYPES } from "@shared/ui/Typography/constants";
 import { HERO_TEXT, HERO_DESCRIPTION, HERO_BUTTON_TEXT } from "../constants";

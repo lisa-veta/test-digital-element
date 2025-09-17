@@ -1,6 +1,5 @@
 import "../style.scss";
-import { INFO_CARD_1, INFO_CARD_2, INFO_CARD_3 } from "@pages/home/Features/constants.js";
-import { InfoCard } from "@shared/ui/InfoCard/index.js";
+import "../media.scss";
 import { INFO_CARD_1, INFO_CARD_2, INFO_CARD_3 } from "@pages/home/Features/constants";
 import { InfoCard } from "@shared/ui/InfoCard";
 import { Typography } from "@shared/ui/Typography";

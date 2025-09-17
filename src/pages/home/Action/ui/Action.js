@@ -1,5 +1,5 @@
 import "../style.scss";
-import { Button } from "@shared/ui/Button/index.js";
+import "../media.scss";
 import { Button } from "@shared/ui/Button";
 import { Typography } from "@shared/ui/Typography";
 import { TYPOGRAPHY_TYPES } from "@shared/ui/Typography/constants";

@@ -1,0 +1,46 @@
+.features {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin: 100px;
+    gap: 50px;
+
+    &__card1 {
+      margin-left: 0;
+    }
+
+    &__label {
+      padding-right: 0;
+    }
+
+    &__col2 {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+  @media (max-width: 480px), (max-width: 768px) {
+    margin: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    &__col1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    &__card1 {
+      margin-left: 0;
+    }
+
+    &__col2 {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import "../style.scss";
+import "../media.scss";
 
 /**
  * Генерирует HTML таблицу с кнопкой в последней ячейке

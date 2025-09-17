@@ -1,0 +1,25 @@
+.clients {
+  @media  (min-width: 768px) and (max-width: 1024px) {
+    padding: 100px;
+    gap: 40px;
+    &__text {
+      gap: 20px;
+    }
+    &__title {
+      min-width: 250px;
+    }
+  }
+  @media (max-width: 480px), (max-width: 768px) {
+    padding: 100px 40px;
+    gap: 20px;
+    border-radius: 100px 0 0 0;
+
+    &__text {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  @media (min-width: 480px) and (max-width: 768px) {
+    gap: 30px;
+  }
+}

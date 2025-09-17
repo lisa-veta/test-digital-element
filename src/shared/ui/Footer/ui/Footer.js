@@ -1,5 +1,5 @@
 import "../style.scss";
-import { LogoIcon } from "@shared/ui/Icons/index.js";
+import "../media.scss";
 import { LogoIcon } from "@shared/ui/Icons";
 import { Typography } from "@shared/ui/Typography";
 import { LETTER_SPACING, TYPOGRAPHY_TYPES } from "@shared/ui/Typography/constants";
@@ -52,7 +52,7 @@ export const Footer = ({ contactInfo, aboutLinks, followLinks }) => `
       <div class="footer__info-wrapper">
         <div class="footer__links-wrapper">
            ${Typography({
-              type: TYPOGRAPHY_TYPES.SUBTITLE,
+              type: TYPOGRAPHY_TYPES.SUBTITLE2,
               text: "About us",
               extraClasses: [ "footer__links-title" ],
             })}
@@ -75,7 +75,7 @@ export const Footer = ({ contactInfo, aboutLinks, followLinks }) => `
 
         <div class="footer__links-wrapper">
           ${Typography({
-            type: TYPOGRAPHY_TYPES.SUBTITLE,
+            type: TYPOGRAPHY_TYPES.SUBTITLE2,
             text: "Follow us",
             extraClasses: [ "footer__links-title" ],
           })}

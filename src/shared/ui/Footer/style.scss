@@ -45,9 +45,6 @@
     display: flex;
     gap: 16px;
     max-width: 299px;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
   }
 
   &__info-wrapper {
@@ -62,10 +59,7 @@
   }
 
   &__links-title {
-    font-size: 20px;
-    line-height: 30px;
     font-weight: 600;
-    letter-spacing: 0.05em;
   }
 
   &__links {
@@ -87,43 +81,5 @@
     background-color: $lapis-lazuli;
     color: $color-white;
     opacity: 0.4;
-  }
-
-  @media (max-width: 480px) {
-    .footer__line {
-      background-color: $color-white;
-      height: 1px;
-      opacity: 0.4;
-      margin-left: 0;
-    }
-
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      background-color: $lapis-lazuli;
-      color:  $color-white;
-      padding: 0;
-      margin-right: 0;
-    }
-
-    &__info-wrapper {
-      display: flex;
-      gap: 0;
-    }
-
-    &__links-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-    &__commun {
-      display: flex;
-      gap: 16px;
-      max-width: 0;
-      font-size: 16px;
-      line-height: 26px;
-      letter-spacing: 0.05em;
-    }
   }
 }

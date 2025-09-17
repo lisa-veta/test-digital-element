@@ -1,5 +1,4 @@
 import "../style.scss";
-import {getStyleString} from "@shared/lib/utils";
 
 /**
  * Компонент Typography
@@ -11,12 +10,14 @@ import {getStyleString} from "@shared/lib/utils";
  * @param {string[]} [props.extraClasses=[]] - Дополнительные CSS-классы
  * @returns {string} HTML-разметка элемента Typography
  */
-export const Typography = ({ type, text, spacing = "default", extraClasses = [] }) => {
-    const classList = [
-        `typography--${type}`,
-        `typography--spacing-${spacing}`,
-        ...extraClasses,
-    ];
+export const Typography = ({
+  type, text, spacing = "default", extraClasses = [], 
+}) => {
+  const classList = [
+    `typography--${type}`,
+    `typography--spacing-${spacing}`,
+    ...extraClasses,
+  ];
 
-    return `<div class="${classList.join(" ")}">${text}</div>`;
+  return `<div class="${classList.join(" ")}">${text}</div>`;
 };

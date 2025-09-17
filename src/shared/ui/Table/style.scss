@@ -1,5 +1,4 @@
 .table {
-
   border-collapse: collapse;
   width: 100%;
 
@@ -42,6 +41,16 @@
 
   &__button:focus {
     background-color:  $lapis-lazuli;
+  }
+
+  @media (max-width: 480px) {
+    &__column {
+      padding: 0;
+      text-transform: uppercase;
+      text-align: center;
+      border-right: 1px solid $color-white;
+      border-bottom: 1px solid $color-white;
+    }
   }
 
 }
