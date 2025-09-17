@@ -1,0 +1,15 @@
+@import "./variables";
+@import "./mixins";
+
+.typography {
+  &--h1 { @include font-style(h1); }
+  &--h2 { @include font-style(h2); }
+  &--subtitle { @include font-style(subtitle); }
+  &--subtitle2 { @include font-style(subtitle2); }
+  &--body { @include font-style(body); }
+  &--caption { @include font-style(caption); }
+
+  &--spacing-tight { letter-spacing: map-get($letter-spacing, tight); }
+  &--spacing-small { letter-spacing: map-get($letter-spacing, small); }
+  &--spacing-default { letter-spacing: map-get($letter-spacing, default); }
+}

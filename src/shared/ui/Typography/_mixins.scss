@@ -1,0 +1,23 @@
+@import "./variables";
+
+/// Миксин для типографики
+/// @param $size-key - ключ из $font-sizes
+/// @param $spacing-key - ключ из $letter-spacing
+@mixin font-style($size-key, $spacing-key: default) {
+  font-size: map-get($font-sizes, $size-key);
+  line-height: map-get($line-heights, $size-key);
+  letter-spacing: map-get($letter-spacing, $spacing-key);
+
+  @media (max-width: 1366px) {
+    font-size: calc(map-get($font-sizes, $size-key) * 0.9);
+    line-height: calc(map-get($line-heights, $size-key) * 0.9);
+  }
+  @media (max-width: 768px) {
+    font-size: calc(map-get($font-sizes, $size-key) * 0.8);
+    line-height: calc(map-get($line-heights, $size-key) * 0.8);
+  }
+  @media (max-width: 480px) {
+    font-size: calc(map-get($font-sizes, $size-key) * 0.6);
+    line-height: calc(map-get($line-heights, $size-key) * 0.6);
+  }
+}
