@@ -23,6 +23,9 @@ export const Action = () => `
               extraClasses: [ "action__description" ],
             })}
         </div>
-        ${Button({ text: "Let’s Talk", extraClassesButton: [ "btn--wide" ] })}
+        ${Button({ 
+          text: "Let’s Talk", 
+          extraClassesButton: [ "btn--wide", "btn--open-modal" ], 
+        })}
     </div>
 </section>`;

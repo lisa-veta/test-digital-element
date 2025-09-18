@@ -4,6 +4,19 @@
     height: auto;
     gap: 20px;
     padding: 30px;
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__label {
+      gap: 5px;
+    }
+
+    &__error-message {
+      font-size: 8px;
+    }
+
   }
   @media (max-width: 480px) {
     width: 300px;
@@ -21,6 +34,19 @@
     }
     &__message {
       min-height:100px;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__label {
+      gap: 5px;
+    }
+
+    &__error-message {
+      font-size: 9px;
+      line-height: 16px;
     }
   }
 }

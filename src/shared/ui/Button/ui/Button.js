@@ -1,4 +1,4 @@
-import { getGeneratedAttrs } from "@shared/lib/utils/index.js";
+import { getGeneratedAttrs } from "@shared/lib/utils";
 import "../style.scss";
 import "../media.scss";
 import { Typography } from "@shared/ui/Typography";
@@ -19,7 +19,7 @@ export const Button = ({
   extraClassesText = [],
   extraAttrs,
 }) =>
-  `<button class="btn ${extraClassesButton.join(" ")}" ${getGeneratedAttrs(extraAttrs)}> 
+  `<button  type="submit" class="btn ${extraClassesButton.join(" ")}" ${getGeneratedAttrs(extraAttrs)}> 
   ${Typography({
     type: "body",
     spacing: "default",

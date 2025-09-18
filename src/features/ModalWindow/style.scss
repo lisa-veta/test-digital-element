@@ -46,6 +46,10 @@
     gap: 32px;
   }
 
+  &__error-message {
+    color: $indian-red;
+  }
+
   &__label {
     display: flex;
     flex-direction: column;

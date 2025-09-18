@@ -1,4 +1,4 @@
-import { LogoIcon, MenuIcon } from "@shared/ui/Icons/index.js";
+import { LogoIcon, MenuIcon } from "@shared/ui/Icons";
 import "../style.scss";
 
 /**
