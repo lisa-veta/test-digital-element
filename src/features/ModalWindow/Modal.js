@@ -40,10 +40,12 @@ export class Modal {
 
   open() {
     this.overlay.classList.remove(MODAL_CONFIG.classes.hidden);
+    document.body.style.overflow = "hidden";
   }
 
   close() {
     this.overlay.classList.add(MODAL_CONFIG.classes.hidden);
+    document.body.style.overflow = "";
   }
 
   bindEvents() {
